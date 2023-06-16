@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Spécialités issues de l'ancienne filière S (scientifique)</h1> <br/><br/>
+    <h3> Des spécialités orientées vers une carrière axée sur le domaine scientifique et numérique, dans le cadre d'un accès au secteur de l'ingénieurie et de l'informatique </h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://sciences.sorbonne-universite.fr/sites/default/files/styles/large/public/media/2019-12/Illustration_mathematiques.jpg?itok=MzFPT4-5" class="card-img-top" alt="Représentation des mathématiques, une photo de formules">
+                <div class="card-body">
+                  <h5 class="card-title">Spécialité Mathématiques</h5>
+                  <p class="card-text">Un approfondissement des cours du tronc commun pour une meilleure compréhension des mathhémqitques et du monde qui nous entoure.</p>
+                  <a href={% url 'spe_maths'%} class="btn btn-primary text-center">Renseignements</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i0.wp.com/www.cours-ado.com/wp-content/uploads/2021/12/cours-particuliers-physique-chimie.jpg?resize=1170%2C780&ssl=1" class="card-img-top" alt="Des erlenmeyers sur une table placés devant un tableau à craie">
+                <div class="card-body">
+                  <h5 class="card-title">Spécialité Physique-Chimie</h5>
+                  <p class="card-text">Des cours suivant une approche beaucoup plus poussée de la compréhension des lois naturelles qui pèsent sur le monde et de sa composition, quelque soit l'échelle de notre étude.</p>
+                  <a href={% url 'spe_pc'%} class="btn btn-primary">Renseignements</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://etudestech.com/wp-content/uploads/2022/12/entreprise-informatique-scaled.jpeg." class="card-img-top" alt="Un homme et un ordinateur">
+                <div class="card-body">
+                  <h5 class="card-title">Spécialité NSI (Numérique et Science de l'Informatique)</h5>
+                  <p class="card-text">L'histoire de la robotique et une ouvevrture sur tous les secrets qe nous cachent les machines et leurs dons.</p>
+                  <a href={% url 'spe_nsi'%} class="btn btn-primary">Renseignements</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>       
+
+{% endblock %}

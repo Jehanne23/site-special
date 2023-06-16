@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <a type="button" class="btn btn-dark" href= {% url 'spe_nsi'%}>La Spéciatité numérique et science de l'informatique</a>
+  </div>
+</div>
+<div class="card" style="width: 16rem;">
+  <div class="card-body">
+    <a type="button" class="btn btn-dark" href=  {% url 'spe_maths'%}>La Spéciatité mathématiques</a>
+  </div>
+</div>
+</div>
+</div>
+
+<h1 class="text-center p-5 h1-30"> La spécialité Physique Chimie au lycée </h1>
+<div class="container mb-10">
+    <div class="row">
+        <div class="col-lg-3 p-5">
+            <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Pourquoi prendre la spé physique en entrant au lycée ?</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>  
+         <div class="col">
+            <h3 class="text-center"> Programme de la spécialité Physique Chimie en premiere générale </h1>
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col width: 1.5rem; ">Thèmes</th>
+                        <th scope="col">Chapitre</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Algèbre</th>
+                        <td>Suites numériques</td>
+                        <td>Fonctions de référence</td>
+                        <td>Equations et inéquation du second degré</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Analyse des fonctions et dérivations</th>
+                        <td>Dérivation</td>
+                        <td>Application de la dérivation</td>
+                        <td>Fonction exponentielle</td>
+                        <td>Trigonométrie</td>
+                        <td>Fonction trigonométrique</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Géométrie</th>
+                        <td>Produit scalaire</td>
+                        <td>Configuration géométrique</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Probabilités et statistiques</th>
+                        <td>Probabilité conditionnelle</td>
+                        <td>Variable aléatoire réelle</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Algorithme et programmation</th>
+                        <td>Exercices manuels (TP)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+{% endblock %}
